@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.divBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.divBar .logo{
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    transition: all 1s ease ;
+}
+
+.divBar .logo:hover{
+    background-color: rgba(240,13,13,0.35);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    box-shadow: -2px 2px 5px 18px rgba(240,13,13,0.35);
+    -webkit-box-shadow: -2px 2px 5px 18px rgba(240,13,13,0.35);
+    -moz-box-shadow: -2px 2px 5px 18px rgba(240,13,13,0.35);
+}
+
+.listaNav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-bar li{
+    padding: 8px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.divBar a{
+    text-decoration: none;
+    padding-right: 20px;
+
+}
+
+.article-rec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+    padding-top: 20px;
+}
