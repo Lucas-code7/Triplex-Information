@@ -1,9 +1,18 @@
-function ItemListContainer(props){
+import { useState, useEffect } from "react"
+import ItemList from "./ItemList"
+
+
+function ItemListContainer(){
+    const [items, setItems] = useState([])
+
+    useEffect( ()=>{
+        fetch('https://dummyjson.com/products')
+        .then(res => res.json())
+        .then(data => setItems(data.products))
+    }, [])
 return(
-    <article className="article-rec">
-        <h2 className="titulo">{props.text}</h2>
-    </article>
-)
+    <ItemList items={items}/>
+    )
 }
 
 export default ItemListContainer
