@@ -1,19 +1,21 @@
-
-import './App.css'
-import NavBar from './componentes/NavBar'
-import ItemListContainer from './componentes/ItemListContainer'
-import { BrowserRouter,Route,Routes } from 'react-router'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./componentes/NavBar";
+import ItemListContainer from "./componentes/ItemListContainer";
+import ItemDetailContainer from "./componentes/ItemDetailContainer";
 
 function App() {
-  return(
+  return (
     <BrowserRouter>
-      <NavBar/>
+      <NavBar categories={["smartphones", "laptops"]} />
       <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
-        <Route path='/category/:id' element={<ItemListContainer/>}/>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/category/:id" element={<ItemListContainer />} />
+            <Route path="/Triplex-Information" element={<ItemListContainer />} />
+            <Route path="/item/:id" element={<ItemDetailContainer />} /> 
       </Routes>
+
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

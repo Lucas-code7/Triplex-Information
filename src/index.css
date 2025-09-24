@@ -14,7 +14,7 @@
 }
 
 .divBar .logo{
-    color: red;
+    color: rgb(26, 117, 170);
     font-size: 25px;
     text-align: center;
     text-decoration: underline;
@@ -22,12 +22,12 @@
 }
 
 .divBar .logo:hover{
-    background-color: rgba(240,13,13,0.35);
+    background-color: rgba(3, 25, 124, 0.35);
     color: rgb(0, 0, 0);
     border-radius: 50px;
-    box-shadow: -2px 2px 5px 18px rgba(240,13,13,0.35);
-    -webkit-box-shadow: -2px 2px 5px 18px rgba(240,13,13,0.35);
-    -moz-box-shadow: -2px 2px 5px 18px rgba(240,13,13,0.35);
+    box-shadow: -2px 2px 5px 18px rgba(13, 28, 240, 0.35);
+    -webkit-box-shadow: -2px 2px 5px 18px rgba(13, 28, 240, 0.35);
+    -moz-box-shadow: -2px 2px 5px 18px rgba(13, 28, 240, 0.35);
 }
 
 .listaNav{
@@ -60,4 +60,68 @@
     text-align: center;
     color: red;
     padding-top: 20px;
+}
+
+.div_foto {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 900px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(48, 11, 255, 0.1);
+}
+
+/* Imagen del producto */
+.div_foto img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #5d5bf3;
+}
+
+/* Información del producto */
+.div_foto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.div_foto p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Precio destacado */
+.div_foto p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0e1df1;
+}
+
+/* Mensaje del carrito */
+.div_foto p:last-child {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.botones-count button{
+    width: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid #c0c3e3;
+    background: #dee2e6;
+}
+.btn-agregar{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: solid #c0c3e3;
+    background: #dee2e6; 
 }
