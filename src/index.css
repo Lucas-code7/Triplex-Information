@@ -75,7 +75,7 @@
   box-shadow: 0 4px 12px rgba(48, 11, 255, 0.1);
 }
 
-/* Imagen del producto */
+
 .div_foto img {
   width: 300px;
   height: auto;
@@ -84,7 +84,7 @@
   border: 1px solid #5d5bf3;
 }
 
-/* Información del producto */
+
 .div_foto h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -97,14 +97,14 @@
   font-size: 1rem;
 }
 
-/* Precio destacado */
+
 .div_foto p:nth-of-type(2) {
   font-weight: bold;
   font-size: 1.2rem;
   color: #0e1df1;
 }
 
-/* Mensaje del carrito */
+
 .div_foto p:last-child {
   margin-top: 1rem;
   font-weight: bold;
